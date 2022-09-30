@@ -1,4 +1,10 @@
 .avatar {
+  width: 3rem; /*poderia ser feito com calculo width: calc(3rem + 12px)*/
+  height: 3rem;/*poderia ser feito com calculo width: calc(3rem + 12px)*/
+  border-radius: 8px;
+}
+
+.avatarWithBorder {
   box-sizing: initial; /*serve para as bordas n usarem o tamanho do box*/
   width: 3rem; /*poderia ser feito com calculo width: calc(3rem + 12px)*/
   height: 3rem;/*poderia ser feito com calculo width: calc(3rem + 12px)*/
