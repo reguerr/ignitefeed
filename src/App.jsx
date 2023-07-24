@@ -14,7 +14,7 @@ const post = [
       role: 'CTO @Alegrim'
     },
     content: [
-      { type: 'paragraph', content: 'Fala galera 👋' },
+      { type: '', content: 'Fala galera 👋' },
       { type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return' },
       { type: 'link', content: 'diego.design/doctorcare' },  
     ],
@@ -47,6 +47,7 @@ export function App() {
           {post.map(post => {
             return (
               <Post
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
